@@ -3,6 +3,9 @@
 
 ## Write a short comment describing this function
 
+## The first function makeCacheMatrix saves a squared matrix in a temporary location.
+## It then invertes the matrix with a solve function and returns a list of the inverted matrix.
+
 makeCacheMatrix <- function(x = matrix()) {
 
   s <- NULL
@@ -20,8 +23,9 @@ makeCacheMatrix <- function(x = matrix()) {
   
 }
 
-
 ## Write a short comment describing this function
+# The chacheSolve function extracts the inverted matrix of makeCachMatrix and returns the inverted matrix.
+# If the matrix is empty, the function calculates the inverted matrix itself and returns the result.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
